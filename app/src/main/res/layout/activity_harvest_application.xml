@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/full"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/morning"
+    tools:context=".HarvestApplication">
+
+  <RelativeLayout
+      android:id="@+id/toplay"
+      android:layout_width="match_parent"
+      android:layout_height="65dp"
+      android:layout_marginTop="7dp"
+      android:background="@drawable/tabrounded"
+      android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/backbutton"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dp"
+        android:clickable="true"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_arrow_black_24"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/backbutton"
+        android:fontFamily="sans-serif"
+        android:text="Harvest Applications."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+  </RelativeLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/toplay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginTop="10dp"
+          android:visibility="visible"
+          app:cardBackgroundColor="#23FFFFFF"
+          app:cardCornerRadius="27dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginTop="5dp">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="390dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/teal_700"
+                app:cardCornerRadius="21dp">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center|center_horizontal"
+                  android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_horizontal"
+                    android:text="Apply for Harvest."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+              </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="15dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="#DDD8D5D5"
+                app:cardCornerRadius="27dp">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:gravity="center|center_horizontal"
+                  android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="serif"
+                    android:gravity="center_horizontal"
+                    android:text="Personal Details."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/Acres"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Name."
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#000000"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/IDNumber"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="ID Number."
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#000000"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/EmailAddress"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Email."
+                    android:inputType="textEmailAddress"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#000000"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundbuttongren"
+                    android:fontFamily="serif"
+                    android:text="Clear."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+              </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="400dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="#DDD8D5D5"
+                app:cardCornerRadius="27dp">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="serif"
+                    android:gravity="center_horizontal"
+                    android:text="Location Details."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/County"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="County."
+                    android:inputType="textLongMessage|textPersonName|text"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#000000"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/subCounty"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Sub-County."
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#000000"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/subcounty"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Area."
+                    android:inputType="textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#000000"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/PhoneNumber"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#000000"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/clear2"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundbuttongren"
+                    android:fontFamily="serif"
+                    android:text="Clear."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+              </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="visible"
+                app:cardBackgroundColor="#DDD8D5D5"
+                app:cardCornerRadius="27dp">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:layout_marginTop="10dp"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:gravity="center_horizontal"
+                    android:text="Trailers"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/textView24"
+                      android:layout_width="35dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginBottom="10dp"
+                      android:layout_weight="1"
+                      android:fontFamily="sans-serif"
+                      android:gravity="center_horizontal"
+                      android:text="Sugarcane Age."
+                      android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                      android:textColor="#000000"
+                      android:textSize="16sp" />
+
+                  <EditText
+                      android:id="@+id/SugarcaneAge"
+                      android:layout_width="15dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:ems="10"
+                      android:fontFamily="serif"
+                      android:hint="months"
+                      android:inputType="textLongMessage|number"
+                      android:textColor="#000000"
+                      android:textColorHint="@android:color/darker_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/textView31"
+                      android:layout_width="35dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginBottom="10dp"
+                      android:layout_weight="1"
+                      android:fontFamily="sans-serif"
+                      android:gravity="center_horizontal"
+                      android:text="Number of Trailers."
+                      android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                      android:textColor="#000000"
+                      android:textSize="16sp" />
+
+                  <EditText
+                      android:id="@+id/editTextTextPersonName2"
+                      android:layout_width="15dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:ems="10"
+                      android:fontFamily="serif"
+                      android:hint=""
+                      android:inputType="textLongMessage|number"
+                      android:textColor="#000000"
+                      android:textColorHint="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/roundbuttongren"
+                    android:fontFamily="serif"
+                    android:text="Clear."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+              </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundbuttongren"
+                android:fontFamily="serif"
+                android:text="Submit."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+          </LinearLayout>
+        </ScrollView>
+
+      </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+  </ScrollView>
+
+</RelativeLayout>

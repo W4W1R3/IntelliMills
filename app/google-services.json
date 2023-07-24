@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "85889324100",
+    "project_id": "intellimills-b464e",
+    "storage_bucket": "intellimills-b464e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85889324100:android:c30b87d1880677a82ad811",
+        "android_client_info": {
+          "package_name": "com.example.intellimills"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOVhi0vi97Z3tGwIcxVDuB9XPBo52dGrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

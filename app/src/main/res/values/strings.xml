@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IntelliMills</string>
+    <string name="intelli_mills">Intelli Mills.</string>
+    <string name="login">Farmer Login.</string>
+    <string name="home">Home.</string>
+    <string name="admin_login">Admin Login</string>
+</resources>
