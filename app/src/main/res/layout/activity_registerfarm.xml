@@ -187,7 +187,7 @@
                   android:textSize="16sp" />
 
               <EditText
-                  android:id="@+id/Acres"
+                  android:id="@+id/Name"
                   android:layout_width="300dp"
                   android:layout_height="wrap_content"
                   android:layout_marginTop="10dp"
@@ -364,7 +364,7 @@
               android:textSize="16sp" />
 
           <EditText
-              android:id="@+id/subcounty"
+              android:id="@+id/Area"
               android:layout_width="300dp"
               android:layout_height="wrap_content"
               android:layout_marginTop="10dp"
@@ -379,7 +379,7 @@
               android:textSize="16sp" />
 
           <EditText
-              android:id="@+id/area"
+              android:id="@+id/Area"
               android:layout_width="300dp"
               android:layout_height="wrap_content"
               android:layout_marginTop="10dp"

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/morning"
+    tools:context=".DriverDashboardActivity">
+
+    <!-- Title TextView -->
+
+    <!-- Pick a Harvest Button -->
+
+    <!-- Report an Issue Button -->
+
+    <!-- Apply for a Day Leave Button -->
+
+    <TextView
+        android:id="@+id/textViewTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:text="Welcome, Driver!"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAdditional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Here you can choose a harvest applicsation made by a farmer so as to amke prior arrangements and communications with the farmer for the cordination in transporting the sugarcane."
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/tabrounded"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Driver Dashboard"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPickHarvest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Additional TextView Below the Leave Button -->
+
+    <!-- Additional Engaging Text 1 -->
+
+    <!-- Additional Engaging Text 2 -->
+
+    <!-- Additional Engaging Text 3 -->
+
+    <!-- Additional Engaging Text 4 -->
+
+    <Button
+        android:id="@+id/buttonPickHarvest"
+        android:layout_width="233dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="144dp"
+        android:background="@drawable/roundbox"
+        android:text="Pick a Harvest Farm"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <Button
+        android:id="@+id/buttonReportIssue"
+        android:layout_width="164dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="592dp"
+        android:background="@drawable/roundbuttongren"
+        android:text="Report an Issue"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonPickHarvest" />
+
+    <Button
+        android:id="@+id/buttonApplyLeave"
+        android:layout_width="223dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edit_text_border"
+        android:text="Apply for Day Leave"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPickHarvest" />
+
+    <TextView
+        android:id="@+id/textViewBelowLeaveButton"
+        android:layout_width="453dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_corner1"
+        android:gravity="center_vertical"
+        android:text="Hey there, driver! Imagine you're on a sunny day, driving through lush green fields. You're about to pick a harvest. 🌞🌾\n\n"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonApplyLeave" />
+
+    <TextView
+        android:id="@+id/textViewEngaging3"
+        android:layout_width="452dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/rounded_corner1"
+        android:gravity="center_vertical"
+        android:text="Here's a thought-provoking one: What do you think the future of farming and harvesting will look like in the next 10 years? Share your insights! 🚜🌟\n\n"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEngaging2" />
+
+    <TextView
+        android:id="@+id/textViewEngaging2"
+        android:layout_width="454dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_corner1"
+        android:gravity="center_vertical"
+        android:text="And here's a fun question for you: If you could choose any crop to harvest, anywhere in the world, where and what would it be? Get creative! 🌍🌱\n\n"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBelowLeaveButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

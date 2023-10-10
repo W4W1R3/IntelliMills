@@ -25,17 +25,6 @@
             android:src="@drawable/ic_baseline_arrow_black_24"
             app:tint="@color/white" />
 
-        <ImageView
-            android:id="@+id/User_image"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@id/backbtn"
-            android:adjustViewBounds="true"
-            android:background="@drawable/ic_baseline_person_24"
-            android:scaleType="fitXY"
-            app:tint="@color/white" />
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -45,74 +34,142 @@
             android:backgroundTint="@color/white"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
-                android:text="Farmer test 17"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
         </LinearLayout>
 
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottomlay"
-        android:background="#25F8F7F7"
-        android:layout_below="@+id/toplay"
-        android:layout_margin="3dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            />
-
+        <TextView
+            android:layout_width="119dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@id/backbtn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="138dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="sans-serif"
+            android:text="Fill a Report"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/bottomlay"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="7dp">
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="327dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginBottom="267dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.045">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="serif"
+                android:gravity="center_horizontal"
+                android:text="Personal Details."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Name."
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/EmailAddress"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Email."
+                android:inputType="textEmailAddress"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundbuttongren"
+                android:fontFamily="serif"
+                android:text="Clear."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <EditText
-            android:id="@+id/enter_message"
-            android:layout_width="match_parent"
-            android:paddingLeft="14dp"
-            android:layout_height="47dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginRight="73dp"
+            android:id="@+id/editTextText4"
+            android:layout_width="390dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="463dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/rounded_corner"
-            android:hint="Enter Message......."
-            android:fontFamily="sans-serif"
-            android:textColor="@color/black"
-            android:textSize="13dp"
-            android:textColorHint="@color/black"
-            android:drawableTint="@color/black"
-            android:drawableLeft="@drawable/ic_baseline_mood_24"/>
+            android:ems="10"
+            android:inputType="text"
+            android:text="Write the report"
+            android:textAlignment="gravity"
+            android:textColor="#807C7C"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/send"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="7dp"
-            android:clickable="true"
-            android:src="@drawable/ic_baseline_send_24"
-            app:backgroundTint="@color/teal_700"
-             />
+            android:layout_marginStart="316dp"
+            android:layout_marginTop="569dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="168dp"
+            android:background="@drawable/roundbuttongren"
+            android:fontFamily="serif"
+            android:text="Submit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>

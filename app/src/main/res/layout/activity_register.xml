@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="320dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="14dp"
             android:layout_marginTop="16dp"
@@ -30,12 +30,12 @@
             android:text="Here is your first step with us."
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="#000000"
-            android:textSize="56sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView17"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:layout_marginRight="10dp"
@@ -45,7 +45,7 @@
             android:text="Register With Us."
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="#000000"
-            android:textSize="42sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -166,7 +166,7 @@
                         <Button
                             android:id="@+id/button"
                             android:layout_width="190dp"
-                            android:layout_height="45dp"
+                            android:layout_height="48dp"
                             android:layout_marginTop="5dp"
                             android:layout_marginBottom="5dp"
                             android:background="@drawable/roundedgebutton"
@@ -197,16 +197,17 @@
             app:cardCornerRadius="27dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_width="466dp"
+                android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
+                android:background="@drawable/roundbuttongren"
                 android:gravity="right|center_horizontal|center_vertical"
                 android:orientation="vertical">
 
                 <Button
                     android:id="@+id/login"
-                    android:layout_width="190dp"
-                    android:layout_height="45dp"
+                    android:layout_width="203dp"
+                    android:layout_height="67dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/roundbuttongren"

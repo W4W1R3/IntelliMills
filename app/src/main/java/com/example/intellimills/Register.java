@@ -57,7 +57,6 @@ public class Register extends AppCompatActivity {
                 Intent Login = new Intent(Register.this,Login.class);
                 startActivity(Login);
                 login.setClickable(true);
-                finish();
             }
         });
 
@@ -66,11 +65,11 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 button.setClickable(false);
-                createUser();
+                createUsers();
             }
         });
     }
-    private void createUser(){
+    private void createUsers(){
 
         Button button=findViewById(R.id.button);
         String email =editemail.getText().toString();
@@ -101,7 +100,7 @@ public class Register extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(Register.this, "User registered Successfully.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(Register.this, "User registered Successfully. You are now a registered farmer at IntelliMills.", Toast.LENGTH_LONG).show();
                         new Handler().postDelayed(new Runnable() {
                             @Override
                             public void run() {
@@ -110,7 +109,6 @@ public class Register extends AppCompatActivity {
 
                                 Intent Login = new Intent(Register.this,Login.class);
                                 startActivity(Login);
-                                finish();
                             }
                         },2000);
 
@@ -124,13 +122,6 @@ public class Register extends AppCompatActivity {
                 }
             });
         }
-
-
-
-
-
-
-
-
     }
+
 }

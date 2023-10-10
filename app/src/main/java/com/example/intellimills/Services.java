@@ -47,7 +47,7 @@ public class Services extends AppCompatActivity {
 
 
 
-        Button button7 = findViewById(R.id.button7);
+        Button button7 = findViewById(R.id.Button7);
         button7.setOnClickListener(view -> {
             button10.setClickable(false);
             button7.setClickable(false);
@@ -64,7 +64,7 @@ public class Services extends AppCompatActivity {
         });
 
 
-        Button button8 = findViewById(R.id.button8);
+        Button button8 = findViewById(R.id.Button8);
         button8.setOnClickListener(view -> {
             button10.setClickable(false);
             button7.setClickable(false);
@@ -125,7 +125,7 @@ public class Services extends AppCompatActivity {
         });
 
 
-        ImageButton imageButton6crop = findViewById(R.id.imageButton6);
+        Button imageButton6crop = findViewById(R.id.button5);
         imageButton6crop.setOnClickListener(view -> {
             imageButton6crop.setClickable(false);
             Toast.makeText(Services.this,"Loading...", Toast.LENGTH_LONG).show();

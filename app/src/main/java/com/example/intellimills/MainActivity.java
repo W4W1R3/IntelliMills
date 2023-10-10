@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
                 new Handler().postDelayed(() -> {
 
-                    Intent Register = new Intent(MainActivity.this, Register.class);
+                    Intent Register = new Intent(MainActivity.this, Login.class);
                     startActivity(Register);
                     finish();
                 }, 4000);

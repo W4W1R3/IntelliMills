@@ -1,767 +1,271 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/white"
-                tools:context=".Services"
->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context=".Services">
 
     <RelativeLayout
-            android:id="@+id/home"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:layout_marginTop="7dp"
-            android:background="@drawable/tabrounded"
-            android:gravity="center_vertical"
-       style="@style/AppTheme">
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/tabrounded">
 
         <ImageView
-                android:id="@+id/profile"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="27dp"
-                android:background="@drawable/ic_baseline_account_circle_24"
-                android:clickable="true"
-                app:tint="@color/white"/>
+            android:id="@+id/profile"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@id/heading"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="348dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="-314dp"
+            android:background="@drawable/ic_baseline_account_circle_24"
+            android:clickable="true"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
-                android:id="@+id/heading"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="18dp"
-                android:fontFamily="sans-serif"
-                android:paddingLeft="14dp"
-                android:text="@string/home"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                android:textColor="#FFFFFF"
-                android:textSize="23sp"
-                android:textStyle="bold"/>
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="14dp"
+            android:text="@string/home"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
-    <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/home">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignTop="@id/textView6"
+        android:layout_marginTop="34dp">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="409dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="497dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="46dp"
+            android:background="@drawable/roundbox"
+            android:fontFamily="serif"
+            android:text="Industry Updates."
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="197dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="198dp"
+            android:layout_marginBottom="500dp"
+            android:background="@drawable/roundbuttongren"
+            android:text="Check Harvest Update"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="93dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="302dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="471dp"
+            android:background="@drawable/roundedgebutton"
+            android:text="Report an Issue"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Button7"
+            android:layout_width="133dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="410dp"
+            android:background="@drawable/roundbuttongren"
+            android:text="Register Farm"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="409dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="423dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="112dp"
+            android:background="@drawable/roundbuttongren"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Latest Updates on the Sugar market."
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="409dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="183dp"
+            android:background="@drawable/roundbuttongren"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Industry Updates."
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="185dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="313dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="248dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="News and Updates"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/Button8"
+            android:layout_width="225dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="202dp"
+            android:layout_marginBottom="330dp"
+            android:background="@drawable/roundbox"
+            android:text="Apply For Harvest."
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="408dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Welcome To Intelli Mills."
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:srcCompat="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="110dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="596dp"
+        android:background="@drawable/rounded_corner"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Services"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="686dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/roundbuttongren"
+        android:backgroundTint="#00000000"
+        android:text="Learn More."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#304FFE"
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:orientation="vertical">
-
-            <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="396dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="35dp"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text="Welcome To Intelli Mills."
-                    android:textColor="#000000"
-                    android:textSize="34sp"
-                    android:textStyle="bold|italic"/>
-
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView2"
-                    android:layout_width="410dp"
-                    android:gravity="center_vertical"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="5dp"
-                    app:cardBackgroundColor="@color/teal_700"
-                    app:cardCornerRadius="25dp">
-
-                <TextView
-                        android:id="@+id/textView9"
-                        android:layout_gravity="center_vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="News and Updates."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:textStyle="bold"/>
-
-                <ImageView
-                        android:id="@+id/imageVie"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:layout_gravity="right"
-                        android:scaleType="centerInside"
-                        app:srcCompat="@drawable/ic_round_chat_24"
-                        tools:ignore="VectorDrawableCompat"/>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                    android:layout_width="410dp"
-                    android:layout_height="150dp"
-                    android:layout_marginBottom="5dp"
-                    app:cardBackgroundColor="#CBFFFFFF"
-                    app:cardCornerRadius="35dp">
-
-                <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center|center_vertical"
-                        android:orientation="vertical">
-
-                    <HorizontalScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="215dp">
-
-                        <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:gravity="center_vertical"
-                                android:orientation="horizontal">
-
-                            <androidx.cardview.widget.CardView
-                                    android:layout_width="160dp"
-                                    android:layout_height="130dp"
-                                    android:layout_gravity="center|center_horizontal|center_vertical"
-                                    android:layout_marginLeft="7dp"
-                                    app:cardBackgroundColor="#FF1744"
-                                    app:cardCornerRadius="30dp"
-                                    app:cardPreventCornerOverlap="true">
-
-                                <Button
-                                        android:id="@+id/button4"
-                                        android:layout_width="160dp"
-                                        android:layout_height="130dp"
-                                        android:background="#03000000"
-                                        android:fontFamily="sans-serif-condensed-light"
-                                        android:text="Latest Updates on the Sugar market."
-                                        android:textAlignment="center"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                        android:textColor="#000000"
-                                        android:textSize="12sp"
-                                        android:textStyle="bold"/>
-
-                                <TextView
-                                        android:id="@+id/textView10"
-                                        android:layout_width="160dp"
-                                        android:layout_height="130dp"
-                                        android:background="@android:color/holo_green_dark"
-                                        android:gravity="center|left"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                        android:textColor="@color/black"
-                                        android:textStyle="bold" android:fontFamily="sans-serif-condensed-light"/>
-
-                            </androidx.cardview.widget.CardView>
-
-                            <androidx.cardview.widget.CardView
-                                    android:layout_width="160dp"
-                                    android:layout_height="130dp"
-                                    android:layout_gravity="center|center_horizontal|center_vertical"
-                                    android:layout_marginLeft="7dp"
-                                    app:cardBackgroundColor="#FF1744"
-                                    app:cardCornerRadius="30dp"
-                                    app:cardPreventCornerOverlap="true">
-
-                                <Button
-                                        android:id="@+id/button5"
-                                        android:layout_width="160dp"
-                                        android:layout_height="130dp"
-                                        android:background="#00000000"
-                                        android:fontFamily="sans-serif-condensed-light"
-                                        android:text="Industry Updates."
-                                        android:textAlignment="center"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                        android:textColor="#FFFFFF"
-                                        android:textSize="12sp"
-                                        android:textStyle="bold"/>
-
-                                <TextView
-                                        android:id="@+id/textView11"
-                                        android:layout_width="160dp"
-                                        android:layout_height="130dp"
-                                        android:background="@android:color/holo_green_dark"
-                                        android:gravity="center|left"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                        android:textColor="@color/black"
-                                        android:textStyle="bold"/>
-
-                            </androidx.cardview.widget.CardView>
-
-                            <androidx.cardview.widget.CardView
-                                    android:layout_width="160dp"
-                                    android:layout_height="130dp"
-                                    android:layout_gravity="center|center_horizontal|center_vertical"
-                                    android:layout_marginLeft="7dp"
-                                    app:cardBackgroundColor="#FF1744"
-                                    app:cardCornerRadius="30dp"
-                                    app:cardPreventCornerOverlap="true">
-
-                                <Button
-                                        android:id="@+id/button6"
-                                        android:layout_width="160dp"
-                                        android:layout_height="130dp"
-                                        android:background="#00000000"
-                                        android:fontFamily="sans-serif-condensed-light"
-                                        android:text="Industry Updates."
-                                        android:textAlignment="center"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                        android:textColor="@color/black"
-                                        android:textSize="12sp"
-                                        android:textStyle="bold"/>
-
-                                <TextView
-                                        android:id="@+id/textView12"
-                                        android:layout_width="160dp"
-                                        android:layout_height="130dp"
-                                        android:background="@android:color/holo_green_dark"
-                                        android:fontFamily="sans-serif-condensed-light"
-                                        android:gravity="center|left"
-                                        android:text="TextView"
-                                        android:textAlignment="center"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                                        android:textColor="@color/black"/>
-
-                            </androidx.cardview.widget.CardView>
-
-                        </LinearLayout>
-                    </HorizontalScrollView>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/title"
-                    android:layout_width="410dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="3dp"
-                    app:cardBackgroundColor="@color/teal_700"
-                    app:cardCornerRadius="25dp">
-
-                <ImageView
-                        android:id="@+id/imageView8"
-                        android:layout_width="100dp"
-                        android:layout_height="40dp"
-                        android:layout_gravity="right"
-                        android:scaleType="centerInside"
-                        app:srcCompat="@drawable/ic_baseline_home_repair_service_24"
-                        tools:ignore="VectorDrawableCompat"/>
-
-                <TextView
-                        android:id="@+id/info"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="Services."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView"
-                    android:layout_width="410dp"
-                    android:layout_height="250dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    app:cardBackgroundColor="#9FFFFFFF"
-                    app:cardCornerRadius="35dp">
-
-                <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center|center_horizontal"
-                        android:orientation="vertical">
-
-                    <HorizontalScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="215dp">
-
-                        <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-
-                            <androidx.cardview.widget.CardView
-                                    android:layout_width="140dp"
-                                    android:layout_height="200dp"
-                                    android:layout_gravity="center|center_horizontal|center_vertical"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginRight="10dp"
-                                    app:cardBackgroundColor="#3D5AFE"
-                                    app:cardCornerRadius="30dp"
-                                    app:cardPreventCornerOverlap="true">
-
-                                <Button
-                                        android:id="@+id/button7"
-                                        android:layout_width="140dp"
-                                        android:layout_height="200dp"
-                                        android:background="#00000000"
-                                        android:fontFamily="sans-serif-condensed-light"
-                                        android:text="Register Farm."
-                                        android:textAlignment="center"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                        android:textColor="@color/white"
-                                        android:textSize="12sp"
-                                        android:textStyle="bold"/>
-
-                                <TextView
-                                        android:id="@+id/textView8"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:background="@android:color/holo_green_dark"
-                                        android:fontFamily="@font/fredericka_the_great"
-                                        android:gravity="center|center_horizontal|center_vertical"
-                                        android:textColor="@color/white"
-                                        android:textSize="16sp"
-                                        android:textStyle="bold"/>
-                            </androidx.cardview.widget.CardView>
-
-                            <androidx.cardview.widget.CardView
-                                    android:layout_width="140dp"
-                                    android:layout_height="200dp"
-                                    android:layout_gravity="center|center_horizontal|center_vertical"
-                                    android:layout_marginRight="10dp"
-                                    app:cardBackgroundColor="#FF1744"
-                                    app:cardCornerRadius="30dp"
-                                    app:cardPreventCornerOverlap="true">
-
-                                <Button
-                                        android:id="@+id/button8"
-                                        android:layout_width="140dp"
-                                        android:layout_height="200dp"
-                                        android:background="#00000000"
-                                        android:fontFamily="sans-serif-condensed-light"
-                                        android:text="Apply For Harvest."
-                                        android:textAlignment="center"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                        android:textColor="@color/black"
-                                        android:textSize="12sp"
-                                        android:textStyle="bold"/>
-
-                                <TextView
-                                        android:id="@+id/textView7"
-                                        android:layout_width="140dp"
-                                        android:layout_height="200dp"
-                                        android:background="@android:color/holo_green_dark"
-                                        android:fontFamily="sans-serif-condensed-light"
-                                        android:gravity="center"
-                                        android:textColor="@color/black"
-                                        android:textSize="16sp"
-                                        android:textStyle="bold"/>
-
-                            </androidx.cardview.widget.CardView>
-
-                            <androidx.cardview.widget.CardView
-                                    android:layout_width="140dp"
-                                    android:layout_height="200dp"
-                                    android:layout_gravity="center|center_horizontal|center_vertical"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginRight="10dp"
-                                    app:cardBackgroundColor="#76FF03"
-                                    app:cardCornerRadius="30dp"
-                                    app:cardPreventCornerOverlap="true">
-
-                                <Button
-                                        android:id="@+id/button9"
-                                        android:layout_width="140dp"
-                                        android:layout_height="200dp"
-                                        android:background="#00000000"
-                                        android:fontFamily="sans-serif-condensed-light"
-                                        android:text="Check Harvest update."
-                                        android:textAlignment="center"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                        android:textColor="@color/black"
-                                        android:textSize="12sp"
-                                        android:textStyle="bold"/>
-
-                                <TextView
-                                        android:id="@+id/textView6"
-                                        android:layout_width="140dp"
-                                        android:layout_height="200dp"
-                                        android:background="@android:color/holo_green_dark"
-                                        android:fontFamily="@font/fredericka_the_great"
-                                        android:gravity="center"
-                                        android:textColor="#000000"
-                                        android:textSize="16sp"
-                                        android:textStyle="bold"/>
-                            </androidx.cardview.widget.CardView>
-
-                            <androidx.cardview.widget.CardView
-                                    android:layout_width="140dp"
-                                    android:layout_height="200dp"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_marginLeft="10dp"
-                                    app:cardBackgroundColor="#76FF03"
-                                    app:cardCornerRadius="30dp">
-
-                                <Button
-                                        android:id="@+id/button10"
-                                        android:layout_width="140dp"
-                                        android:layout_height="200dp"
-                                        android:background="#00000000"
-                                        android:fontFamily="sans-serif-condensed-light"
-                                        android:text="Report An Issue."
-                                        android:textAlignment="center"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                        android:textColor="#FFFFFF"
-                                        android:textSize="12sp"
-                                        android:textStyle="bold"/>
-
-                                <TextView
-                                        android:id="@+id/textView16"
-                                        android:layout_width="140dp"
-                                        android:layout_height="200dp"
-                                        android:background="@drawable/morning"
-                                        android:fontFamily="@font/fredericka_the_great"
-                                        android:gravity="center"
-                                        android:textColor="#FFFFFF"
-                                        android:textSize="16sp"
-                                        android:textStyle="bold"/>
-                            </androidx.cardview.widget.CardView>
-
-                        </LinearLayout>
-                    </HorizontalScrollView>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/title2"
-                    android:layout_width="410dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    app:cardBackgroundColor="@color/teal_700"
-                    app:cardCornerRadius="25dp">
-
-                <TextView
-                        android:id="@+id/textViewlas"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="Information system."
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                   style="@style/AppTheme"/>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                    android:layout_width="410dp"
-                    android:layout_height="280dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    app:cardBackgroundColor="#FFFFFF"
-                    app:cardCornerRadius="30dp"
-                    app:cardPreventCornerOverlap="true">
-
-                <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="7dp"
-                        android:orientation="vertical">
-
-                    <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="7dp"
-                            android:gravity="center_horizontal"
-                            android:orientation="horizontal">
-
-                        <TextView
-                                android:id="@+id/textView31"
-                                android:layout_width="250dp"
-                                android:layout_height="40dp"
-                                android:layout_marginLeft="10dp"
-                                android:fontFamily="sans-serif-condensed-light"
-                                android:text="Did You know?"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                                android:textColor="@color/black"
-                                android:textSize="34sp"
-                                android:textStyle="normal|bold"
-                           style="@style/AppTheme"/>
-
-                        <ImageView
-                                android:id="@+id/imageView7"
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:layout_weight="1"
-                                android:scaleType="centerInside"
-                                app:srcCompat="@drawable/bulb"/>
-
-                    </LinearLayout>
-
-                    <TextView
-                            android:id="@+id/textView32"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingStart="10dp"
-                            android:paddingEnd="10dp"
-                            android:text="There are  three types of sugarcane?"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"/>
-
-                    <HorizontalScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp">
-
-                        <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-
-                            <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="150dp"
-                                    android:orientation="horizontal">
-
-                                <androidx.cardview.widget.CardView
-                                        android:layout_width="380dp"
-                                        android:layout_height="match_parent"
-                                        android:layout_marginRight="10dp"
-                                        app:cardBackgroundColor="#FF0000"
-                                        app:cardCornerRadius="14dp">
-
-                                    <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:gravity="center_horizontal|center_vertical"
-                                            android:orientation="vertical">
-
-                                        <TextView
-                                                android:id="@+id/textView33"
-                                                android:layout_width="340dp"
-                                                android:layout_height="wrap_content"
-                                                android:foregroundGravity="left"
-                                                android:paddingStart="10dp"
-                                                android:paddingEnd="10dp"
-                                                android:text="Chewing canes. These are sugarcane varieties that have a soft, fibrous center which is good for chewing. The fibers tend to stick together as you chew so that spitting it out once the sugar is depleted is easier."
-                                                android:textColor="#000000"
-                                                android:textSize="17sp"/>
-
-                                    </LinearLayout>
-                                </androidx.cardview.widget.CardView>
-
-                                <TextView
-                                        android:id="@+id/textView35"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_weight="1"
-                                        android:gravity="center|center_horizontal|center_vertical"
-                                        android:text="Syrup canes. Syrup canes have a variety of sugar types that don’t crystallize easily but are good for making sugar syrup. Crystal canes are largely commercial varieties with high concentrations of sucrose used to make crystallized table sugar."
-                                        android:textColor="#000000"
-                                        android:textSize="17sp"/>
-                                <androidx.cardview.widget.CardView
-                                        android:layout_width="380dp"
-                                        android:layout_height="match_parent"
-                                        app:cardBackgroundColor="#00D659"
-                                        app:cardCornerRadius="14dp"
-                                        app:cardPreventCornerOverlap="true">
-
-                                    <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:gravity="center_horizontal|center_vertical"
-                                            android:orientation="vertical"
-                                            android:paddingStart="10dp"
-                                            android:paddingEnd="10dp">
-
-                                    </LinearLayout>
-                                </androidx.cardview.widget.CardView>
-
-                            </LinearLayout>
-                        </LinearLayout>
-                    </HorizontalScrollView>
-
-                    <Button
-                            android:id="@+id/button17"
-                            android:layout_width="93dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="left"
-                            android:layout_marginLeft="300dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/roundcolorless"
-                            android:backgroundTint="#00000000"
-                            android:text="Learn More."
-                            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-                            android:textColor="#304FFE"
-                            android:textSize="12sp"
-                            android:textStyle="bold"/>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/title4"
-                    android:layout_width="410dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    app:cardBackgroundColor="@color/teal_700"
-                    app:cardCornerRadius="25dp">
-
-                <TextView
-                        android:id="@+id/textViewlas2"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:fontFamily="sans-serif-condensed-light"
-                        android:gravity="center_horizontal|center_vertical"
-                        android:text="SugarCane Farming Tips."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textColor="#000000"
-                        android:textSize="20sp"
-                        android:textStyle="bold"/>
-
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView4"
-                    android:layout_width="410dp"
-                    android:layout_height="250dp"
-                    app:cardBackgroundColor="#CBFFFFFF"
-                    app:cardCornerRadius="35dp">
-
-                <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center|center_horizontal"
-                        android:orientation="vertical">
-
-                    <HorizontalScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="295dp">
-
-                        <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal">
-
-                            <androidx.cardview.widget.CardView
-                                    android:layout_width="140dp"
-                                    android:layout_height="200dp"
-                                    android:layout_gravity="center|center_horizontal|center_vertical"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginRight="7dp"
-                                    app:cardBackgroundColor="#76FF03"
-                                    app:cardCornerRadius="30dp"
-                                    app:cardPreventCornerOverlap="true">
-
-                                <ImageButton
-                                        android:id="@+id/imageButton6"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        app:srcCompat="@drawable/fertilizer"/>
-
-                                <TextView
-                                        android:id="@+id/textView14"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="97dp"
-                                        android:fontFamily="@font/fredericka_the_great"
-                                        android:gravity="center|center_horizontal|center_vertical"
-                                        android:text="Crop Nuitrition."
-                                        android:textColor="#FFFFFF"
-                                        android:textSize="16sp"
-                                        android:textStyle="bold"/>
-
-                            </androidx.cardview.widget.CardView>
-
-                            <androidx.cardview.widget.CardView
-                                    android:layout_width="140dp"
-                                    android:layout_height="200dp"
-                                    android:layout_gravity="center|center_horizontal|center_vertical"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginRight="7dp"
-                                    app:cardBackgroundColor="#3D5AFE"
-                                    app:cardCornerRadius="30dp"
-                                    app:cardPreventCornerOverlap="true">
-
-                                <ImageButton
-                                        android:id="@+id/imageButton"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        app:srcCompat="@drawable/sugarcut"/>
-
-                                <TextView
-                                        android:id="@+id/textView13"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="97dp"
-                                        android:fontFamily="@font/fredericka_the_great"
-                                        android:gravity="center|center_horizontal|center_vertical"
-                                        android:text="Register Farm."
-                                        android:textColor="#FFFFFF"
-                                        android:textSize="16sp"
-                                        android:textStyle="bold"/>
-
-                            </androidx.cardview.widget.CardView>
-
-                            <androidx.cardview.widget.CardView
-                                    android:layout_width="140dp"
-                                    android:layout_height="200dp"
-                                    android:layout_gravity="center|center_horizontal|center_vertical"
-                                    android:layout_marginRight="7dp"
-                                    app:cardBackgroundColor="#FF1744"
-                                    app:cardCornerRadius="30dp"
-                                    app:cardPreventCornerOverlap="true">
-
-                                <ImageButton
-                                        android:id="@+id/imageButton4"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        app:srcCompat="@drawable/flo"/>
-
-                                <TextView
-                                        android:id="@+id/textView15"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="97dp"
-                                        android:fontFamily="@font/fredericka_the_great"
-                                        android:gravity="center|center_horizontal|center_vertical"
-                                        android:text="Cane Breeds And Varieties."
-                                        android:textColor="#FFFFFF"
-                                        android:textSize="16sp"
-                                        android:textStyle="bold"/>
-
-                            </androidx.cardview.widget.CardView>
-
-                        </LinearLayout>
-
-                    </HorizontalScrollView>
-
-                    <HorizontalScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                        <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:orientation="horizontal"/>
-                    </HorizontalScrollView>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <Button
-                    android:id="@+id/button16"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Button"/>
-
-        </LinearLayout>
-    </ScrollView>
 </RelativeLayout>
+

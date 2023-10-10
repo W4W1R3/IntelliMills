@@ -22,7 +22,6 @@ public class Harvestupdates extends AppCompatActivity {
             public void onClick(View view) {
                 Intent serv = new Intent(Harvestupdates.this,Services.class);
                 startActivity(serv);
-                finish();
             }
         });
     }
