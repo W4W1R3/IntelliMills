@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/morning"
-tools:context=".Messaging">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/morning"
+    tools:context=".Messaging">
 
-<!-- Your existing top layout -->
+    <!-- Your existing top layout -->
 
     <!-- Driver Leave Form -->
+
     <RelativeLayout
         android:id="@+id/toplay"
         android:layout_width="match_parent"
@@ -22,127 +23,88 @@ tools:context=".Messaging">
 
         <TextView
             android:id="@+id/textView20"
-            android:layout_width="300dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="63dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="48dp"
             android:fontFamily="serif"
             android:text="Driver Leave Form"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
     </RelativeLayout>
-
-    <LinearLayout
-    android:layout_width="390dp"
-    android:layout_height="wrap_content"
-    android:layout_centerInParent="true"
-    android:background="@drawable/rounded_corner"
-    android:orientation="vertical">
-
-        <!-- Add other fields for ID and reason for leave -->
-
-    </LinearLayout>
 
     <EditText
         android:id="@+id/editTextText4"
-        android:layout_width="390dp"
+        android:layout_width="match_parent"
         android:layout_height="154dp"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Id"
+        android:layout_marginTop="64dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textMultiLine"
         android:text="Reason for Leave"
         android:textColor="#807C7C"
-        android:textColorHint="@android:color/darker_gray" />
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="75dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTextText4"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="170dp"
-        android:layout_marginBottom="202dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:background="@drawable/roundbuttongren"
         android:fontFamily="serif"
         android:text="Submit"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#000000"
-        android:textSize="12sp"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/Name"
-        android:layout_width="331dp"
-        android:layout_height="75dp"
-        android:layout_above="@+id/editTextText4"
+        android:id="@+id/Id"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
         android:layout_below="@+id/toplay"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="91dp"
+        android:layout_marginTop="95dp"
         android:background="@drawable/rounded_corner"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="#000000"
-        android:textColorHint="@android:color/darker_gray"
-        android:textSize="16sp" />
-
-    <EditText
-        android:id="@+id/name2"
-        android:layout_width="327dp"
-        android:layout_height="78dp"
-        android:layout_above="@+id/editTextText4"
-        android:layout_below="@+id/toplay"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="26dp"
-        android:background="@drawable/rounded_corner"
-        android:ems="10"
-        android:fontFamily="sans-serif"
         android:hint="ID"
         android:inputType="textPersonName"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#000000"
         android:textColorHint="@android:color/darker_gray"
-        android:textSize="16sp" />
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/name3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/toplay"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/rounded_corner"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#000000"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="75dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTextText4"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginStart="303dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="235dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/roundbuttongren"
         android:fontFamily="serif"
         android:text="Clear"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#000000"
-        android:textSize="12sp"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
-

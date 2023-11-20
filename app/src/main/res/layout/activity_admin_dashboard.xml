@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/leflet"
+    android:background="@drawable/back2"
     tools:context=".AdminDashboardActivity">
+
+    <!-- Header RelativeLayout (You provided this part) -->
 
     <RelativeLayout
         android:id="@+id/home"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_alignBottom="@+id/textView4"
         android:layout_marginBottom="650dp"
         android:background="@drawable/tabrounded"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigation_layout"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
 
+        <!-- Profile Icon -->
         <ImageView
             android:id="@+id/profile2"
             android:layout_width="66dp"
@@ -32,6 +34,7 @@
             android:clickable="true"
             tools:ignore="SpeakableTextPresentCheck" />
 
+        <!-- Heading -->
         <TextView
             android:id="@+id/heading"
             android:layout_width="wrap_content"
@@ -48,6 +51,123 @@
             android:textColor="@color/black"
             android:textSize="23sp"
             android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Navigation Layout -->
+    <RelativeLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="474dp"
+        android:layout_height="723dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home">
+
+        <!-- Button 1: Permit Approval -->
+
+        <!-- Text View 1: Description for Permit Approval -->
+
+        <!-- Button 2: Extraction Approval -->
+
+        <!-- Text View 2: Description for Extraction Approval -->
+
+        <!-- Button 3: Leave Oversight -->
+
+        <!-- Text View 3: Description for Leave Oversight -->
+
+        <!-- Button 4: Reported Issues -->
+
+        <!-- Text View 4: Description for Reported Issues -->
+
+        <TextView
+            android:layout_width="259dp"
+            android:layout_height="132dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="23dp"
+            android:text="Approve permit requests from users"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnPermitApproval"
+            android:layout_width="188dp"
+            android:layout_height="122dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="2dp"
+            android:text="Permit Approval"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnExtractionApproval"
+            android:layout_width="152dp"
+            android:layout_height="109dp"
+            android:layout_below="@id/btnPermitApproval"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="234dp"
+            android:text="Extraction Approval"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="228dp"
+            android:layout_height="99dp"
+            android:layout_below="@id/btnExtractionApproval"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-104dp"
+            android:layout_marginEnd="1dp"
+            android:text="Approve extraction requests from users"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLeaveOversight"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@id/btnExtractionApproval"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="164dp"
+            android:layout_marginEnd="95dp"
+            android:text="Leave Oversight"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLeaveOversight"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Manage leave requests from employees"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnReportedIssues"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:text="View reported issues from users"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnReportedIssues"
+            android:layout_width="206dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/btnLeaveOversight"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="87dp"
+            android:layout_marginEnd="85dp"
+            android:text="Reported Issues"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
